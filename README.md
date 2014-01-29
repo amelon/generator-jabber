@@ -49,6 +49,13 @@ $ yo jabber:controller
 ```
 
 
+#### Entity
+Create entity.
+```
+$ yo jabber:entity
+```
+
+
 
 ### Getting To Know Yeoman
 

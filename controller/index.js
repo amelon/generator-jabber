@@ -12,7 +12,9 @@ var ControllerGenerator = module.exports = function ControllerGenerator(args, op
   console.log('You called the controller subgenerator with the argument ' + this.name + '.');
 };
 
-util.inherits(ControllerGenerator, yeoman.generators.NamedBase);
+util.inherits(ControllerGenerator, yeoman.generators.Base);
+
+
 
 ControllerGenerator.prototype.askFor = function askFor() {
   var cb;
@@ -73,7 +75,7 @@ ControllerGenerator.prototype.files = function files() {
   var mod_path  = path.join('assets/javascripts/backbone/apps/', this.mod_name);
   var mod_file  = this.mod_name + '.app.js';
   var ct_path   = path.join(mod_path, this.ct_name);
-  var ct_name   = this.ct_name + '.ct.js';
+  var ct_name   = this.ct_name + '.ctrl.js';
   var view_name = this.ct_name + '.view.js';
   var tpl_path  = path.join(ct_path, 'tpl');
 
